@@ -5,8 +5,8 @@ import sys
 
 HEADER_LENGTH = 10
 
-IP = "10.147.19.220"
-PORT = 5541
+IP = "xx.xxx.xx.xxx"
+PORT = 0000
 
 my_username = input("Enter Username: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
