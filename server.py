@@ -2,8 +2,8 @@ import socket
 import select
 
 HEADER_LENGTH = 10
-IP = "10.147.19.220"
-PORT = 5541
+IP = "xx.xxx.xx.xxx"
+PORT = 0000
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
