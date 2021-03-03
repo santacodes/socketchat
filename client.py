@@ -2,11 +2,12 @@ import socket
 import select
 import errno
 import sys
+import threading
 
 HEADER_LENGTH = 10
 
-IP = "xx.xxx.xx.xxx"
-PORT = 0000
+IP = socket.gethostbyname(socket.gethostname())
+PORT = 5541
 
 my_username = input("Enter Username: ")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

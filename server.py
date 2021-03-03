@@ -1,9 +1,10 @@
 import socket
 import select
+import threading
 
 HEADER_LENGTH = 10
-IP = "xx.xxx.xx.xxx"
-PORT = 0000
+IP = socket.gethostbyname(socket.gethostname())
+PORT = 5541
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
